@@ -1,0 +1,16 @@
+@import url(./global.css);
+@import url(./header.css);
+@import url(./introducao.css);
+@import url(./tecnologia.css);
+@import url(./bikes/bikes.css);
+/* utilidades */
+
+@import url(./utilidaades/componentes.css);
+@import url(./utilidaades/tipografia.css);
+@import url(./utilidaades/color.css);
+
+/* home */
+
+@import url(./home/header.css);
+@import url(./home/introducao.css);
+@import url(./home/tecnologia.css);
