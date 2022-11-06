@@ -19,3 +19,13 @@
 .ponto {
   color: #ffbb00;
 }
+
+.container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  gap: 0 40px;
+}

@@ -14,12 +14,6 @@ img {
   padding-bottom: 100px;
   gap: 0 40px;
   grid-template-columns: 1fr 1fr;
-  max-width: 1300px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 }
 
 .introducao img {

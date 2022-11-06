@@ -1,8 +1,7 @@
-@import url(./global.css);
-@import url(./header.css);
 @import url(./introducao.css);
 @import url(./tecnologia.css);
 @import url(./bikes/bikes.css);
+
 /* utilidades */
 
 @import url(./utilidaades/componentes.css);
@@ -11,6 +10,10 @@
 
 /* home */
 
-@import url(./home/header.css);
 @import url(./home/introducao.css);
 @import url(./home/tecnologia.css);
+
+/* global */
+
+@import url(./global/header.css);
+@import url(./global/global.css);
