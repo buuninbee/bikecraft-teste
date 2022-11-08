@@ -16,7 +16,7 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.introducao img {
+.introducao-img img {
   object-fit: cover;
   height: 100%;
 }
