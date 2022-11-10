@@ -24,11 +24,6 @@
   padding-top: 160px;
 }
 
-.tecnologia-corpo p {
-  font-size: 28px;
-  margin: 0;
-}
-
 .tecnologia-corpo h1 {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -36,9 +31,6 @@
 }
 
 .tecnologia-corpo h4 {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
   position: relative;
   color: var(--cor-5);
   margin: 0;
@@ -46,46 +38,21 @@
 }
 
 .tecnologia-info h3 {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
   padding-bottom: 20px;
 }
 
 .tecnologia-corpo p {
   padding-bottom: 40px;
-  font-size: 24px;
-}
-
-.tecnologia-corpo a {
-  color: var(--cor-p1);
-  text-transform: uppercase;
-  font-size: 28px;
-  position: relative;
-  max-width: 308px;
-  padding-bottom: 40px;
-}
-
-.tecnologia-corpo a::after {
-  content: " ";
-  height: 4px;
-  width: 220px;
-  top: 38px;
-  right: 86px;
-  position: absolute;
-  /* display: block; */
-  background-color: var(--cor-p1);
-}
-
-.tecnologia-corpo a:hover {
-  color: var(--cor-5);
 }
 
 .tecnologia-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 24px;
-  padding-top: 40px;
+  display: flex;
+  gap: 0 40px;
+}
+
+.tecnologia-conteudo a {
+  margin-bottom: 80px;
+  width: 270px;
 }
 
 .tecnologia-info h3 {
@@ -95,4 +62,25 @@
 
 .tecnologia-info img {
   grid-row: 1;
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-img img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-info {
+    flex-direction: column;
+  }
+
+  .tecnologia-conteudo a {
+    margin-bottom: 50px;
+  }
 }

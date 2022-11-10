@@ -14,7 +14,6 @@
 
 .introducao2 h1 {
   font: 600 4rem/1.125 "Poppins", sans-serif;
-  color: #000000;
   padding-bottom: 62px;
 }
 
@@ -38,19 +37,15 @@
 
 .bikes p,
 h3 {
-  color: var(--cor-12);
-  text-transform: capitalize;
   padding-top: 8px;
 }
 
 .bikes p {
-  color: var(--cor-8);
-  font-size: 20px;
   margin-left: 20px;
 }
 
 .bikes h3 {
-  font: 600 2rem "roboto", sans-serif;
+  text-transform: capitalize;
   display: flex;
   align-items: center;
 }
@@ -70,7 +65,7 @@ h3 {
   transition: 0.2s;
 }
 
-@media (max-width: 800px;) {
+@media (max-width: 800px) {
   .introducao2 {
     padding-bottom: 60px;
   }
