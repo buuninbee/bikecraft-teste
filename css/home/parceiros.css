@@ -15,12 +15,43 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.parceiros li {
+.borda {
   display: flex;
-  padding: 32px;
   border-left: 2px solid var(--cor-2);
+  padding: 32px 0;
+}
+
+.borda:first-child,
+:nth-child(5) {
+  border-left: none;
+}
+
+.borda:nth-child(n + 5) {
+  border-top: 2px solid var(--cor-2);
 }
 
 .parceiros img {
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiros h2 {
+    margin-bottom: 32px;
+  }
+
+  .borda {
+    padding-bottom: 20px;
+  }
+
+  .borda:nth-child(odd) {
+    border-left: none;
+  }
+
+  .borda:nth-child(n + 3) {
+    border-top: 2px solid var(--cor-2);
+  }
 }
