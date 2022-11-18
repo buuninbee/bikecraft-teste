@@ -33,3 +33,25 @@ img {
 .introducao-conteudo p {
   margin-bottom: 32px;
 }
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao-conteudo {
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .introducao-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 -160px var(--cor-0);
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

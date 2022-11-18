@@ -1,0 +1,27 @@
+.seguro-bg {
+  background-color: var(--cor-11);
+  color: white;
+  padding-bottom: 270px;
+}
+
+.seguro-bg h2 {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  grid-column: 1 / -1;
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.seguro-itens {
+  background-color: var(--cor-12);
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.seguro-itens li {
+  grid-column: 1;
+}

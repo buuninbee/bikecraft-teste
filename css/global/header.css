@@ -29,7 +29,7 @@
   display: inline-block;
   padding: 16px 0px;
   position: relative;
-  font-family: "Poppinsk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -46,4 +46,33 @@
 
 .header-menu a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu a {
+    background-color: var(--cor-11);
+    padding: 12px;
+    border-radius: 3px;
+  }
+
+  .header-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .header-menu {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header img {
+    padding-bottom: 20px;
+  }
 }

@@ -19,3 +19,7 @@
 
 @import url(./global/header.css);
 @import url(./global/global.css);
+
+/* seguros */
+
+@import url(./seguro/seguro.css);
