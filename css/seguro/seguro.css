@@ -1,27 +1,71 @@
 .seguro-bg {
   background-color: var(--cor-11);
-  color: white;
+  color: var(--cor-0);
   padding-bottom: 270px;
-}
-
-.seguro-bg h2 {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  grid-column: 1 / -1;
 }
 
 .seguro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.seguro-bg h2 {
+  grid-column: 1 / -1;
 }
 
 .seguro-itens {
   background-color: var(--cor-12);
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: 32px 32px 32px 60px;
+}
+
+.seguro-itens h3 {
+  margin-bottom: 40px;
+}
+
+.seguro-itens li + li {
+  grid-column: 1;
+  margin-top: 12px;
 }
 
 .seguro-itens li {
-  grid-column: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seguro-itens li::before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../../img/lista.svg);
+  width: 13px;
+  height: 9px;
+  left: -21px;
+  position: absolute;
+}
+
+.seguro-itens ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.seguro-itens span {
+  display: block;
+  text-align: right;
+}
+
+.seguro-itens a {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .seguro {
+    grid-template-columns: 1fr;
+  }
 }
