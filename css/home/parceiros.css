@@ -55,3 +55,9 @@
     border-top: 2px solid var(--cor-2);
   }
 }
+
+@media (max-width: 400px) {
+  .borda {
+    padding: 15px 10px;
+  }
+}
