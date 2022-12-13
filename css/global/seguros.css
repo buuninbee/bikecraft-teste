@@ -137,10 +137,15 @@
 @media (max-width: 800px) {
   .seguro {
     grid-template-columns: 1fr;
+    grid-column: 1 / -1;
   }
 
   .seguro-itens {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  .seguro-itens + .seguro-itens {
+    grid-row: 3;
   }
 
   .vantagens-lista {
@@ -151,5 +156,10 @@
 @media (max-width: 600px) {
   .vantagens-lista {
     grid-template-columns: 1fr;
+  }
+
+  .vantagens-bg {
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 }

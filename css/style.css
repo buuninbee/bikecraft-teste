@@ -18,8 +18,15 @@
 @import url(./global/footer.css);
 @import url(./global/header.css);
 @import url(./global/global.css);
-@import url(./global/termos.css);
 @import url(./global/seguros.css);
+
+/* bicicleta */
+
+@import url(./bicicleta/bicicleta.css);
+
+/* termos */
+
+@import url(./global/termos.css);
 
 /* seguros */
 
