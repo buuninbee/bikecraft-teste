@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos e Condições | Bikcraft</title>
+    <title>Contato | Bikcraft</title>
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="description" content="termos e condições">
+    <meta name="description" content="Contato">
 
     <!-- fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet"> -->
 </head>
 
-<body>
+<body id="contato">
     <header class="header-bg ">
         <div class="header container ">
             <a href="./">
@@ -47,47 +47,59 @@
     </header>
 
     <main>
-        <div class="titulo-bg">
-            <div class="container">
-                <p class="font-2-l cor-6">TERMOS DE USO</p>
-                <h1 class="font-1-xxl cor-0">termos e condições<span class="cor-p1">.</span></h1>
+        <div class="titulo-bg ">
+            <div class="titulo container">
+                <p class=" font-2-l cor-5">Respostas em até 24hrs</p>
+                <h1 class="font-1-xxl cor-0">nosso contato <span class="cor-p1">.</span></h1>
             </div>
         </div>
 
-        <div class="termo-conteudo  container">
-            <h3 class="font-1-l cor-12">1. Política de Estorno</h3>
-            <ul class="">
-                <li>1.1 Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista
-                    também
-                    aceitamos PIX e Boleto. Aceitamos pagamentos parcelados em todos os cartões de crédito. Para
-                    pagamentos à vista também aceitamos PIX e Boleto.</li>
-                <li>1.2 Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista
-                    também
-                    aceitamos PIX e Boleto. Aceitamos pagamentos parcelados em todos os cartões de crédito. Para
-                    pagamentos à vista também aceitamos PIX e Boleto.</li>
-                <li>1.2 Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista
-                    também
-                    aceitamos PIX e Boleto. Aceitamos pagamentos parcelados em todos os cartões de crédito. Para
-                    pagamentos à vista também aceitamos PIX e Boleto.</li>
-            </ul>
+        <div class="contato container">
+            <section class="contato-dados">
+                <h2 class="font-1-m cor-0">
+                    loja online
+                </h2>
 
-            <h3 class="font-1-l cor-12">2. Conta do Usuário</h3>
+                <div class="contato-endereco font-2-s cor-4">
+                    <p>Rua Ali Perto, 35</p>
+                    <p>Rio de Janeiro - RJ</p>
+                    <p>Brasil - Terra - Vita Láctea </p>
+                </div>
 
-            <ul>
-                <li>2.1 Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista
-                    também
-                    aceitamos PIX e Boleto. Aceitamos pagamentos parcelados em todos os cartões de crédito. Para
-                    pagamentos à vista também aceitamos PIX e Boleto.</li>
-            </ul>
+                <address class="contato-meios">
+                    <a class="font-2-s cor-4" href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                    <a class="font-2-s cor-4" href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <a class="font-2-s cor-4" href="tel:+5521999999999">+55 21 999999999</a>
+                </address>
 
-            <h3 class="font-1-l cor-12">3. Seguro Bikcraft</h3>
+                <div class="contato-redes">
+                    <a href="./"> <img src="./icone/instagram-p.svg" alt=""></a>
+                    <a href="./"> <img src="./icone/facebook-p.svg" alt=""></a>
+                    <a href="./"> <img src="/icone/youtube-p.svg" alt=""></a>
+                </div>
+            </section>
 
-            <ul>
-                <li>2.1 Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista
-                    também
-                    aceitamos PIX e Boleto. Aceitamos pagamentos parcelados em todos os cartões de crédito. Para
-                    pagamentos à vista também aceitamos PIX e Boleto.</li>
-            </ul>
+            <section class="contato-formulario">
+                <form class="form" action="./contato.html">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="seu nome">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(21) 999999999">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="contato@gmail.com">
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa ?"></textarea>
+                    </div>
+                    <button class="botao">Enviar mensagem</button>
+                </form>
+            </section>
         </div>
     </main>
 
@@ -105,8 +117,8 @@
                 <h3 class="font-2-l cor-0">CONTATO</h3>
 
                 <ul class="cor-5 font-1-m">
-                    <li> <a href="./">+55 21 9999-9999</a></li>
-                    <li> <a href="./">contato@bikcraft.com</a></li>
+                    <li><a class="font-2-s cor-4" href=" mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li><a class="font-2-s cor-4" href="tel:+5521999999999">+55 21 999999999</a></li>
                     <li>Gama quadra 14 loja 8 </li>
                     <li>Brasilia - DF</li>
                 </ul>
@@ -116,7 +128,6 @@
                     <a href="./"> <img src="./img/facebook.svg" alt=""></a>
                     <a href="./"> <img src="./img/youtube.svg" alt=""></a>
                 </div>
-
 
             </div>
 
