@@ -1,0 +1,41 @@
+.loja-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.lojas img {
+  border-radius: 4px 4px 0 0;
+}
+
+.loja-itens {
+  background-color: var(--cor-0);
+}
+
+.loja-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+  padding: 40px 40px;
+}
+
+.loja-dados {
+  gap: 15px;
+}
+
+.loja-dados h3 {
+  grid-column: 1 /-1;
+  padding: 0 0 20px 0;
+}
+
+.loja-tempo {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.loja-tempo img {
+  margin-right: 8px;
+}
