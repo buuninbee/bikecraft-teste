@@ -1,4 +1,4 @@
-.loja-conteudo {
+.lojas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -6,36 +6,56 @@
   padding-bottom: 160px;
 }
 
-.lojas img {
-  border-radius: 4px 4px 0 0;
+.lojas h2 {
+  grid-column: 1 / -1;
 }
 
 .loja-itens {
+  border-radius: 4px;
+  background: var(--cor-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.loja-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 40px 40px;
   background-color: var(--cor-0);
+}
+
+.loja-conteudo h3 {
+  grid-column: 1 / -1;
 }
 
 .loja-dados {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 20px;
-  padding: 40px 40px;
+  gap: 8px;
+  border-left: 2px solid var(--cor-2);
+  padding-left: 12px;
 }
 
-.loja-dados {
-  gap: 15px;
-}
-
-.loja-dados h3 {
-  grid-column: 1 /-1;
-  padding: 0 0 20px 0;
+.lojas img {
+  border-radius: 4px 4px 0 0;
 }
 
 .loja-tempo {
   display: flex;
   align-items: center;
-  padding-top: 32px;
 }
 
 .loja-tempo img {
   margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .loja-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas {
+    grid-template-columns: 1fr;
+  }
 }
