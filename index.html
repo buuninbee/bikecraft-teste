@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bikcraft</title>
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="description" content="bikcraft">
 
     <!-- fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -60,9 +61,11 @@
 
                     <a class="botao" href="./">escolha sua</a>
                 </div>
-                <div>
-                    <img class="introducao-img" src="./img/foto-home.jpg" alt="bikcraft">
-                </div>
+
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./img/nimbus-1.jpg">
+                    <img class="introducao-img" src="./img/foto-home.jpg" width="1280" height="1600" alt="bikcraft">
+                </picture>
 
             </div>
 
@@ -75,7 +78,7 @@
                 <ul class="bikes">
                     <li>
                         <a href="./bicicletas/magic.html">
-                            <img src="./img/magic-home.jpg" alt="">
+                            <img src="./img/magic-home.jpg" width="920" height="1040" alt="">
                             <h3 class="cor-11 font-2-l-b ">Magic-home</h3>
                             <p class="font-1-m cor-11 ">R$2499</p>
                         </a>
@@ -83,7 +86,7 @@
 
                     <li>
                         <a href="./bicicletas/nimbus.html">
-                            <img src="./img/nimbus-home.jpg" alt="">
+                            <img src="./img/nimbus-home.jpg" width="920" height="1040" alt="">
                             <h3 class="cor-11 font-2-l-b">Nimbus starck</h3>
                             <p class="font-1-m cor-8">R$4999</p>
                         </a>
@@ -91,7 +94,7 @@
 
                     <li>
                         <a href="./bicicletas/nebula.html">
-                            <img src="./img/nebula-home.jpg" alt="">
+                            <img src="./img/nebula-home.jpg" width="920" height="1040" alt="">
                             <h3 class="cor-11 font-2-l-b">Nebula cosmic</h3>
                             <p class="font-1-m cor-8">R$3999</p>
                         </a>
@@ -119,7 +122,7 @@
 
                     <div class="tecnologia-info">
                         <div>
-                            <img src="./img/eletrica.svg" alt="">
+                            <img src="./img/eletrica.svg" width="24" height="24" alt="">
 
                             <h3 class="cor-0 font-1-m">
                                 Motor Elétrico
@@ -136,7 +139,7 @@
                         </div>
 
                         <div>
-                            <img src="./img/rastreador.svg" alt="">
+                            <img src="./img/rastreador.svg" width="24" height="24" alt="">
 
                             <h3 class="cor-0 font-1-m">
                                 rastreador
@@ -151,7 +154,7 @@
                     </div>
                 </div>
                 <div class="tecnologia-img">
-                    <img src="./img/tecnologia.jpg" alt="">
+                    <img src="./img/tecnologia.jpg" width="1200" height="1920" alt="">
                 </div>
             </div>
         </article>
@@ -164,28 +167,28 @@
 
         <ul>
             <l1 class="borda">
-                <img src="./parceiros/caravana.svg" alt="caravana">
+                <img src="./parceiros/caravana.svg" width="140" height="38" alt="caravana">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/ranek.svg" alt="ranek">
+                <img src="./parceiros/ranek.svg" width="149" height="36" alt="ranek">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/henbol.svg" alt="henbol">
+                <img src="./parceiros/henbol.svg" width="139" height="50" alt="henbol">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/dogs.svg" alt="dogs">
+                <img src="./parceiros/dogs.svg" width="152" height="39" alt="dogs">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/lescone.svg" alt="lescone">
+                <img src="./parceiros/lescone.svg" width="208" height="41" alt="lescone">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/flexbox.svg" alt="flexbox">
+                <img src="./parceiros/flexbox.svg" width="165" height="38" alt="flexbox">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/wildbeast.svg" alt="wildbeast">
+                <img src="./parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast">
             </l1>
             <l1 class="borda">
-                <img src="./parceiros/surfbot.svg" alt="surfbot">
+                <img src="./parceiros/surfbot.svg" width="200" height="49" alt="surfbot">
             </l1>
         </ul>
     </section>
@@ -193,7 +196,7 @@
     <section class="depoimento">
 
         <div class="depoimento-img">
-            <img src="./img/depoimento.jpg" alt="">
+            <img src="./img/depoimento.jpg" width="1560" height="1360" alt="">
         </div>
 
         <div class="depoimento-conteudo">
@@ -249,7 +252,7 @@
         <div class="footer-conteudo container">
 
             <div class="footer-img">
-                <img class="" src="./img/bikcraft.svg" alt="">
+                <img class="" src="./img/bikcraft.svg" width="136" height="32" alt="">
             </div>
 
 
@@ -265,9 +268,9 @@
                 </ul>
 
                 <div class="footer-social">
-                    <a href="./"> <img src="./img/instagram.svg" alt=""></a>
-                    <a href="./"> <img src="./img/facebook.svg" alt=""></a>
-                    <a href="./"> <img src="./img/youtube.svg" alt=""></a>
+                    <a href="./"> <img src="./img/instagram.svg" width="32" height="32" alt=""></a>
+                    <a href="./"> <img src="./img/facebook.svg" width="32" height="32" alt=""></a>
+                    <a href="./"> <img src="./img/youtube.svg" width="32" height="32" alt=""></a>
                 </div>
 
             </div>
